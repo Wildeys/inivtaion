@@ -216,13 +216,18 @@
   transform: scale(1) translateY(0);
 }
 
-  .card-frame{
-    position:relative;
-    border-radius: 4px;
-    padding: 10px;
-    background: linear-gradient(160deg, var(--gold-light), var(--gold) 40%, #8a6a25 100%);
-    box-shadow: 0 25px 60px rgba(0,0,0,.55), 0 0 0 1px rgba(201,162,74,.4);
-  }
+  .card-frame {
+  width: min(460px, 100%);
+  flex-shrink: 0;
+  padding: 7px;
+  border-radius: 8px;
+  background: linear-gradient(
+    160deg,
+    var(--gold-light),
+    var(--gold) 40%,
+    #8a6a25 100%
+  );
+}
   .card-frame img {
   display: block;
   width: 100%;
